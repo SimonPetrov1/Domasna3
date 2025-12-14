@@ -14,7 +14,6 @@ body{
 h1,h2,h3{font-weight:600;color:#0f172a;}
 p{color:#6b7280;font-size:14px;line-height:1.6;}
 
-/* NAVBAR – ист како market.css */
 .nav{
   position:sticky;
   top:0;
@@ -64,8 +63,22 @@ p{color:#6b7280;font-size:14px;line-height:1.6;}
   color:#fff;
 }
 .btn-primary:hover{background:#15803d;}
+.btn-outline-secondary {
+background:#fff;
+  color:#4b5563;
+  border:1px solid #d1d5db;
+  border-radius:999px;
+  padding:8px 16px;
+  font-size:14px;
+  cursor:pointer;
+  }
+  .btn-outline-secondary,
+.btn-outline-secondary:visited,
+.btn-outline-secondary:hover,
+.btn-outline-secondary:active{
+  text-decoration:none;
+}
 
-/* HELP PAGE CONTENT – едноставен layout */
 .help-hero{
   padding:72px 0 32px;
   background:radial-gradient(circle at top,#f9e3ff 0,#f5f7fb 55%,#f5f7fb 100%);
@@ -79,7 +92,7 @@ p{color:#6b7280;font-size:14px;line-height:1.6;}
   font-size:14px;
 }
 .help-section{
-  padding:72px 0 80px;  /* поголем top padding = картите подолу */
+  padding:72px 0 80px;
 }
 .help-cards{
   display:grid;
@@ -101,7 +114,8 @@ p{color:#6b7280;font-size:14px;line-height:1.6;}
   color:#4b5563;
 }
 
-/* FOOTER – ист како market.css */
+
+/* FOOTER */
 .footer{
   border-top:1px solid #e5e7eb;
   padding:18px 0;
@@ -131,7 +145,23 @@ p{color:#6b7280;font-size:14px;line-height:1.6;}
 
 /* RESPONSIVE */
 @media (max-width:900px){
-  .help-cards{
+  .hero-main-text{
+    margin-bottom:32px;
+    padding:0 8px;
+  }
+  .hero-bottom{
+    flex-direction:column;
+  }
+  .hero-card{
+    width:100%;
+  }
+  .steps-inner{
+    flex-direction:column;
+  }
+  .steps-cards{
+    width:100%;
+  }
+  .why-grid{
     grid-template-columns:1fr;
   }
   .footer-inner{

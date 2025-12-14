@@ -82,6 +82,21 @@ body{
 .btn-primary:hover{
   background:#15803d;
 }
+.btn-outline-secondary{
+  background:#fff;
+  color:#4b5563;
+  border:1px solid #d1d5db;
+  border-radius:999px;
+  padding:8px 16px;
+  font-size:14px;
+  cursor:pointer;
+}
+.btn-outline-secondary,
+.btn-outline-secondary:visited,
+.btn-outline-secondary:hover,
+.btn-outline-secondary:active{
+  text-decoration:none;
+}
 
 /* HERO SECTION */
 .market-hero{
